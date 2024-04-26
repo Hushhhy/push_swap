@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:25:19 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/24 14:04:55 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 13:30:08 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ long long   min_a(t_frst *stack)
     tmp = stack->a;
     while (i < stack->size_a)
     {
+        tmp = tmp->next;
         if (tmp->data < min)
             min = tmp->data;
-        tmp = tmp->next;
         i++;
     }
     return (min);

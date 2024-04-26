@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 10:33:27 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/24 14:43:57 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 11:13:19 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ t_stack	*ft_lastnode(t_stack *head)
 	t_stack	*a;
 
 	a = head;
+	if (!head)
+		return (NULL);
 	while (a->next != head)
 		a = a->next;
 	return (a);

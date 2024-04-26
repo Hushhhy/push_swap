@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:53:27 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/24 14:25:08 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:53:30 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void    ra_rb(t_frst *stack, long long cost_ra, long long cost_rb)
     }
     while (cost_ra != 0)
     {
-        ft_sa(stack, 1);
+        ft_ra(stack, 1);
         cost_ra--;
     }
     while (cost_rb != 0)
@@ -81,4 +81,5 @@ void    rra_rrb(t_frst *stack, long long cost_rra, long long cost_rrb)
         ft_rrb(stack, 1);
         cost_rrb--;
     }
+    ft_pa(stack, 1);
 }

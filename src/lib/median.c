@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 12:42:08 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/24 15:31:37 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 13:31:24 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ long long   median_finder(t_frst *stack)
 	rtn = tmp->data;
 	ft_lstfree(&cp);
 	free(cp);
-	return (rtn);
+	return (rtn);tmp = tmp->next;
 }
 
 void	sort_a(t_frst *stack)
@@ -61,7 +61,6 @@ void	sort_a(t_frst *stack)
 		ft_ra(stack, 1);
 	else
 	{
-		printf("1 %lld\n2 %lld\n3 %lld\n", stack->a->data, stack->a->next->data, stack->a->next->next->data);
 		if (stack->a->data > stack->a->next->data
 			&& stack->a->data > stack->a->next->next->data)
 			ft_ra(stack, 1);

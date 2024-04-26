@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:11:49 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/24 13:58:05 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 13:31:53 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ void    cost(t_frst *stack)
                 min_pos = i;
             i++;
         }
-        operations(stack, min_pos);
+        operations(stack, partition_utils(stack->b, min_pos)->data);
         free(cost);
     }
     ending(stack);
