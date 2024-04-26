@@ -6,16 +6,16 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:11:54 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/17 13:25:12 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:10:26 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	    ft_putstr_fd(char *s, int fd);
-size_t	    numlen(long nbr);
-char	    *ft_itoa(int n);
-char    	*pre_conv(int len);
+void		ft_putstr_fd(char *s, int fd);
+size_t		numlen(long nbr);
+char		*ft_itoa(int n);
+char		*pre_conv(int len);
 long long	ft_atoll(const char *str);
 
 long long	ft_atoll(const char *str)

@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:06:56 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/17 15:18:52 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:09:15 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n);
 char	*ft_strjoin(char const *s1, char const *s2);
-int	    ft_strcmp(const char *s1, const char *s2);
+int		ft_strcmp(const char *s1, const char *s2);
 size_t	ft_strlen(const char *s);
 void	*ft_calloc(size_t count, size_t size);
 

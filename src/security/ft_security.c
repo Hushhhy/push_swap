@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 12:52:41 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/24 14:41:34 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:22:27 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	ft_argsec(char **av)
 void	ft_lstfree(t_stack **a)
 {
 	t_stack	*tmp;
-	t_stack *head;
-	
+	t_stack	*head;
+
 	if (!*a)
 		return ;
 	head = *a;
@@ -46,7 +46,7 @@ int	is_sorted(t_frst stack)
 
 	tmp = stack.a;
 	head = stack.a;
-	while(tmp->next && tmp->next != head)
+	while (tmp->next && tmp->next != head)
 	{	
 		if (tmp->data > tmp->next->data)
 			return (0);

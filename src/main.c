@@ -6,28 +6,14 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 15:03:48 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/26 13:32:31 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:07:01 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
+// #include <stdio.h>
+// void	printlist(t_frst *stack);
 
-// void	printlist(t_frst *stack)
-// {
-// 	t_stack *tmp;
-// 	t_stack	*head;
-	
-// 	head = stack->a;
-// 	tmp = stack->a;
-// 	printf("Stack = %lld\n", tmp->data);
-// 	tmp = tmp->next;
-// 	while (tmp != head)
-// 	{
-// 		printf("Stack = %lld\n", tmp->data);
-// 		tmp = tmp->next;
-// 	}
-// }
 int	micromain(int argc, char **argv, t_frst *stack)
 {
 	int	i;
@@ -50,7 +36,7 @@ int	micromain(int argc, char **argv, t_frst *stack)
 int	main(int argc, char **argv)
 {
 	t_frst	stack;
-	
+
 	null_init(&stack);
 	if (!micromain(argc, argv, &stack))
 		return (0);
@@ -67,3 +53,19 @@ int	main(int argc, char **argv)
 	ft_lstfree(&(stack.b));
 	return (0);
 }
+
+// void	printlist(t_frst *stack)
+// {
+// 	t_stack *tmp;
+// 	t_stack	*head;
+
+// 	head = stack->a;
+// 	tmp = stack->a;
+// 	printf("Stack = %lld\n", tmp->data);
+// 	tmp = tmp->next;
+// 	while (tmp != head)
+// 	{
+// 		printf("Stack = %lld\n", tmp->data);
+// 		tmp = tmp->next;
+// 	}
+// }

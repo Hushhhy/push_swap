@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 12:57:50 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/24 15:15:21 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:14:34 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ t_stack	*ft_lstlast(t_stack *lst)
 	t_stack	*head;
 
 	head = lst;
-	while ( lst && lst->next != head)
+	while (lst && lst->next != head)
 	{
 		if (!lst->next)
 			return (lst);
@@ -47,11 +47,11 @@ void	ft_lstadd_back(t_stack **lst, t_stack *new)
 	new->next = *lst;
 }
 
-void ft_swap(t_stack *a, t_stack *b)
+void	ft_swap(t_stack *a, t_stack *b)
 {
-    long long   c;
+	long long	c;
 
-    c = a->data;
-    a->data = b->data;
-    b->data = c;
+	c = a->data;
+	a->data = b->data;
+	b->data = c;
 }
