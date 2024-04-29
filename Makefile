@@ -6,14 +6,14 @@
 #    By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 12:55:34 by acarpent          #+#    #+#              #
-#    Updated: 2024/04/17 12:57:32 by acarpent         ###   ########.fr        #
+#    Updated: 2024/04/29 17:24:30 by acarpent         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Définitions de base
 NAME = push_swap
 CC = cc
-CFLAGS = -g -Wall -Wextra -Werror 
+CFLAGS = -Wall -Wextra -Werror -pg
 CPPFLAGS = -I./src/include
 BUILD = ./build
 SRC = $(shell find ./src -name '*.c') # A REMPLACER

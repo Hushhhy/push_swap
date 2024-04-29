@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 14:23:20 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/26 14:08:53 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/29 16:51:24 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ending(t_frst *stack)
 
 	min = min_a(stack);
 	pos = 0;
-	while (stack->a->data != min)
+	while (partition_utils(stack->a, pos)->data != min)
 		pos++;
 	i = 0;
 	if (pos < stack->size_a - pos)

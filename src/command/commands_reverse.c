@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 12:32:00 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/26 14:27:06 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/29 16:47:56 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,21 +51,15 @@ void	ft_rra(t_frst *stack, int text)
 void	ft_rrb(t_frst *stack, int text)
 {
 	t_stack		*tmp;
-	long long	imax;
+	t_stack		*head;
 
 	if (stack->size_b < 2)
 		return ;
-	imax = 0;
 	tmp = stack->b;
-	while (stack->b->next)
-	{
-		imax++;
+	head = stack->b;
+	stack->b = stack->b->next;
+	while (stack->b->next != head)
 		stack->b = stack->b->next;
-	}
-	stack->b->next = tmp;
-	while (imax-- > 1)
-		tmp = tmp->next;
-	tmp->next = NULL;
 	if (text)
 		write(1, "rrb\n", 4);
 }

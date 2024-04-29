@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 15:03:31 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/26 14:24:50 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/04/29 16:57:49 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdbool.h>
+#include <stdio.h>
 # include <limits.h>
 // # include <stdio.h>
 //----------------------------------------------------------------------------*/
