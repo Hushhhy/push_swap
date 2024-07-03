@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 15:03:31 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/29 16:57:49 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/05/03 12:59:05 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdbool.h>
-#include <stdio.h>
 # include <limits.h>
-// # include <stdio.h>
+
 //----------------------------------------------------------------------------*/
 //                            Listes chainees                                 */
 //----------------------------------------------------------------------------*/
@@ -75,7 +74,7 @@ void		ft_rr(t_frst *stack, int text);
 void		ra_rb(t_frst *stack, long long cost_ra, long long cost_rb);
 void		ra_rrb(t_frst *stack, long long cost_ra, long long cost_rrb);
 void		rra_rb(t_frst *stack, long long cost_rra, long long cost_rb);
-void		rra_rrb(t_frst *stack, long long cost_rra, long long const_rrb);
+void		rra_rrb(t_frst *stack, long long cost_rra, long long cost_rrb);
 
 //----------------------------------------------------------------------------*/
 //                            Algorythm implementation                        */

@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:11:49 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/29 17:21:52 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/05/03 11:29:57 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,6 @@ void	cost(t_frst *stack)
 		if (!cost)
 			return (error_free(stack));
 		i = 0;
-		// printf("%lld\n", stack->size_b);
 		while (i < stack->size_b)
 		{
 			cost[i] = cost_finder(stack, partition_utils(stack->b, i)->data);

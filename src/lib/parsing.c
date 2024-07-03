@@ -6,7 +6,7 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:10:42 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/29 16:59:58 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/05/03 11:29:45 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ void	ft_toolong(char **split)
 	}
 }
 
-
 void	ft_limit(char **split, char *str)
 {
 	int		nb;
@@ -83,7 +82,6 @@ void	ft_limit(char **split, char *str)
 		i++;
 	if (ft_strcmp(str + i, itoa) != 0)
 	{
-		// dprintf(2, "%s %s\n", str + i, itoa);
 		free(itoa);
 		ft_free(split);
 		exit(write(2, "Error\n", 6));

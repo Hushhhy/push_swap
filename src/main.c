@@ -6,13 +6,11 @@
 /*   By: acarpent <acarpent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 15:03:48 by acarpent          #+#    #+#             */
-/*   Updated: 2024/04/26 14:07:01 by acarpent         ###   ########.fr       */
+/*   Updated: 2024/06/24 13:58:05 by acarpent         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-// #include <stdio.h>
-// void	printlist(t_frst *stack);
 
 int	micromain(int argc, char **argv, t_frst *stack)
 {
@@ -42,30 +40,12 @@ int	main(int argc, char **argv)
 		return (0);
 	stack.size_a = ft_lstsize(stack.a);
 	stack.size_b = 0;
-	// printlist(&stack);
 	if (!is_sorted(stack))
 	{
 		median(&stack);
 		cost(&stack);
 	}
-	// printlist(&stack);
 	ft_lstfree(&(stack.a));
 	ft_lstfree(&(stack.b));
 	return (0);
 }
-
-// void	printlist(t_frst *stack)
-// {
-// 	t_stack *tmp;
-// 	t_stack	*head;
-
-// 	head = stack->a;
-// 	tmp = stack->a;
-// 	printf("Stack = %lld\n", tmp->data);
-// 	tmp = tmp->next;
-// 	while (tmp != head)
-// 	{
-// 		printf("Stack = %lld\n", tmp->data);
-// 		tmp = tmp->next;
-// 	}
-// }
